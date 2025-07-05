@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat with AI</title>
+</head>
+<body>
+  <h1>AI 聊天 Demo</h1>
+  <form method="POST">
+    <input type="text" name="message" placeholder="输入你的问题..." required>
+    <button type="submit">发送</button>
+  </form>
+
+  {% if reply %}
+    <p><strong>AI 回复：</strong>{{ reply }}</p>
+  {% endif %}
+</body>
+</html>
